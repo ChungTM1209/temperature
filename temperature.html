@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    function Temperature(c) {
+        this.c = c;
+        this.cToF = function () {
+            return this.c * 1.8 + 32
+        }
+        this.cToK = function () {
+            return this.c + 273
+        }
+    }
+
+    var temperature = new Temperature(25);
+    document.write("C change to F: " + temperature.cToF() + "<br>");
+    document.write("C change to K: " + temperature.cToK())
+
+</script>
+</body>
+</html>
